@@ -1,6 +1,7 @@
 package models;
 
 public abstract class Car {
+    protected Integer id;
     int year;
     int horsePower;
     public String brand;
@@ -17,5 +18,10 @@ public abstract class Car {
     abstract void stop();
 
 
+    public Integer getId() { return id;
     }
+    public void  setId(Integer id) {
+        this.id = id;
+    }
+}
 
